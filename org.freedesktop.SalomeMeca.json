@@ -1,0 +1,347 @@
+{
+   /* ATLAS no parece estar incluido */
+   "app-id": "org.freedesktop.SalomeMeca",
+   "runtime": "org.freedesktop.Platform",
+   "runtime-version": "1.6",
+   "sdk": "org.freedesktop.Sdk",
+   "finish-args": [
+      "--share=ipc", "--socket=x11",
+      "--socket=pulseaudio",
+      "--share=network",
+      "--device=all",
+      "--filesystem=home",
+      "--env=SALOMEDIR=/app/bin",
+      "--env=APPLIDIR=/app/bin",
+      "--env=LC_NUMERIC=C",
+      "--env=ROOT_SALOME=/app/bin",
+      "--env=SALOME_PLUGINS_PATH=/app/bin/plugins",
+      "--env=MODULES_ROOT_DIR=/app/bin/modules",
+      "--env=TOOLS_ROOT_DIR=/app/bin/tools",
+      "--env=PREREQUISITES_ROOT_DIR=/app/bin/prerequisites",
+      "--env=DEBIANFORSALOME=/app/bin/prerequisites/debianForSalome",
+
+      "--env=TCLDIR=/app/bin/prerequisites/Tcl-8513",
+      "--env=TCL_LIBRARY=/app/bin/prerequisites/Tcl-8513/lib/tcl8.5",
+
+      "--env=TKDIR=/app/bin/prerequisites/Tk-8513",
+      "--env=TK_LIBRARY=/app/bin/prerequisites/Tk-8513/lib/tk8.5",
+
+      "--env=PYTHONHOME=/app/bin/prerequisites/Python-2710",
+      "--env=PYTHONSTARTUP=/app/bin/prerequisites/Python-2710/pythonrc.py",
+      "--env=PYTHON_INCLUDE=/app/bin/prerequisites/Python-2710/include/python2.7",
+      "--env=PYTHONPATH=/app/bin/prerequisites/Python-2710/lib/python2.7:/app/bin/prerequisites/Python-2710/lib/python2.7/site-packages:/app/bin/prerequisites/Lxml-340/lib/python2.7/site-packages:/app/bin/prerequisites/Pkgconfig-110/lib/python2.7/site-packages:/app/bin/modules/ASTER_20170/lib/python2.7/site-packages/salome:/app/bin/tools/Code_aster_frontend-20170/lib/python2.7/site-packages:/app/bin/prerequisites/H5py-250/lib/python2.7/site-packages:/app/bin/prerequisites/Cython-0232/lib/python2.7/site-packages:/app/bin/modules/SMESH_V8_3_0/share/salome/plugins/smesh/Verima:/app/bin/modules/ASTERSTUDY_201702/lib/python2.7/site-packages/asterstudy:/app/bin/modules/ASTERSTUDY_201702/lib/python2.7/site-packages/salome:/app/bin/tools/Code_aster_frontend-20170/lib/python2.7/site-packages:/app/bin/tools/Medcoupling-V8_3_0/lib/python2.7/site-packages:/app/bin/prerequisites/Scipy-0151/lib/python2.7/site-packages:/app/bin/prerequisites/Paraview-v512_EDF/lib/paraview-5.1/site-packages/paraview/vtk:/app/bin/prerequisites/Paraview-v512_EDF/lib/paraview-5.1/site-packages/vtk:/app/bin/prerequisites/Paraview-v512_EDF/lib/paraview-5.1/site-packages:/app/bin/prerequisites/Paraview-v512_EDF/lib/paraview-5.1:/app/bin/prerequisites/Matplotlib-143/lib/python2.7/site-packages:/app/bin/prerequisites/Pyqt-560/lib/python2.7/site-packages:/app/bin/prerequisites/Jinja-273/lib/python2.7/site-packages:/app/bin/tools/Libbatch-V2_3_1/lib/python2.7/site-packages:/app/bin/prerequisites/Omniorbpy-36/lib/python2.7/site-packages/omniidl_be:/app/bin/prerequisites/Omniorbpy-36lib/python2.7/site-packages:/app/bin/prerequisites/Docutils-012/lib/python2.7/site-packages:/app/bin/prerequisites/Numpy-192/lib/python2.7/site-packages:/app/bin/prerequisites/Mfront-TFEL300/lib/python2.7/site-packages:/app/bin/prerequisites/Mercurial-261/lib/python2.7/site-packages:/app/bin/tools/Medfichier-321/lib/python2.7/site-packages:/app/bin/tools/Code_aster_frontend-20170/lib/python2.7/site-packages:/app/bin/prerequisites/Pygments-202/lib/python2.7/site-packages:/app/bin/prerequisites/Omniorb-416/lib/python2.7/site-packages:/app/bin/prerequisites/Sip-418/lib/python2.7/site-packages:/app/bin/tools/Eficas_nouveau-V8_3_0:/app/bin/tools/Eficas_nouveau-V8_3_0/UiQT5:/app/bin/tools/Eficas_nouveau-V8_3_0/Editeur",
+      "--env=PYTHON_ROOT_DIR=/app/bin/prerequisites/Python-2710",
+
+      "--env=SIP_ROOT_DIR=/app/bin/prerequisites/Sip-418",
+
+      "--env=OMNIORB_DIR=/app/bin/prerequisites/Omniorb-416",
+
+      "--env=HDF5HOME=/app/bin/prerequisites/Hdf5-1814",
+      "--env=HDF5_DISABLE_VERSION_CHECK=1",
+
+      "--env=CGNSHOME=/app/bin/prerequisites/Cgnslib-3134",
+
+      "--env=PYGMENTS_HOME=/app/bin/prerequisites/Pygments-202",
+
+      "--env=METISDIR=/app/bin/prerequisites/Metis_aster-510_aster1",
+      "--env=METISDIR=/app/bin/prerequisites/Metis-40",
+
+      "--env=ASTER_ROOT=/app/bin/tools/Code_aster_frontend-20170",
+
+      "--env=ECREVISSE_OLD_ROOT_DIR=/app/bin/tools/Ecrevisse_old-321",
+      "--env=ECREVISSE_ROOT_DIR=/app/bin/tools/Ecrevisse-322",
+
+      "--env=GIBI_DIR=/app/bin/tools/Gibi-20008",
+
+      "--env=GMSH_BIN_DIR=/app/bin/prerequisites/Gmsh_bin-2120Linux64/bin",
+
+      "--env=HOMARD_ASTER_ROOT_DIR=/app/bin/tools/Homard_aster-117_aster",
+
+      "--env=LAPACKDIR=/app/bin/prerequisites/Lapack-350",
+
+      "--env=MED3HOME=/app/bin/tools/Medfichier-321",
+      "--env=MEDFICHIER_INSTALL_DIR=/app/bin/tools/Medfichier-321",
+
+      "--env=MERCURIAL_ROOT_DIR=/app/bin/prerequisites/Mercurial-261",
+
+      "--env=TFELHOME=/app/bin/prerequisites/Mfront-TFEL300",
+
+      "--env=MISS3D_DIR=/app/bin/tools/Miss3d-66_aster4",
+
+      "--env=NUMPY_DIR=/app/bin/prerequisites/Numpy-192",
+
+      "--env=SCOTCHDIR=/app/bin/prerequisites/Scotch-5111",
+
+      "--env=ASTER_OLDSTABLE=/app/bin/tools/Code_aster_oldstable-1280",
+
+      "--env=DOCUTILS_ROOT_DIR=/app/bin/prerequisites/Docutils-012",
+
+      "--env=FREETYPE_ROOT=/app/bin/prerequisites/Freetype-2411",
+
+      "--env=OMNIORBPY_DIR=/app/bin/prerequisites/Omniorbpy-36",
+
+      "--env=BOOSTDIR=/app/bin/prerequisites/Boost-1520",
+      "--env=BOOST_ROOT=/app/bin/prerequisites/Boost-1520",
+
+      "--env=GRAPHVIZHOME=/app/bin/prerequisites/Graphviz-2380",
+
+      "--env=GL2PS_INSTALL_DIR=/app/bin/prerequisites/Gl2ps-139svn20160620",
+
+      "--env=CPPUNIT_ROOT=/app/bin/prerequisites/Cppunit-1132",
+
+      "--env=LIBBATCH_ROOT_DIR=/app/bin/tools/Libbatch-V2_3_1",
+
+      "--env=LIBXML_DIR=/app/bin/prerequisites/Libxml2-290",
+      "--env=LIBXML2_ROOT_DIR=/app/bin/prerequisites/Libxml2-290",
+
+      "--env=FREEIMAGE_ROOT=/app/bin/prerequisites/Freeimage-3160p1",
+      "--env=FreeImage_version=3.16.0",
+
+      "--env=CASROOT=/app/bin/prerequisites/Occ-710p1",
+      "--env=CSF_UnitsLexicon=/app/bin/prerequisites/Occ-710p1/src/UnitsAPI/Lexi_Expr.dat",
+      "--env=CSF_UnitsDefinition=/app/bin/prerequisites/Occ-710p1/src/UnitsAPI/Units.dat",
+      "--env=CSF_SHMessageStd=/app/bin/prerequisites/Occ-710p1/src/SHMessageStd",
+      "--env=CSF_SHMessage=/app/bin/prerequisites/Occ-710p1/src/SHMessage",
+      "--env=CSF_XSMessage=/app/bin/prerequisites/Occ-710p1/src/XSMessage",
+      "--env=CSF_MDTVFontDirectory=/app/bin/prerequisites/Occ-710p1/src/FontMFT",
+      "--env=CSF_MDTVTexturesDirectory=/app/bin/prerequisites/Occ-710p1/src/Textures",
+      "--env=CSF_StandardDefaults=/app/bin/prerequisites/Occ-710p1/src/StdResource",
+      "--env=CSF_PluginDefaults=/app/bin/prerequisites/Occ-710p1/src/StdResource",
+      "--env=CSF_StandardLiteDefaults=/app/bin/prerequisites/Occ-710p1/src/StdResource",
+      "--env=CSF_XmlOcafResource=/app/bin/prerequisites/Occ-710p1/src/XmlOcafResource",
+
+      "--env=QTDIR=/app/bin/prerequisites/Qt-5611",
+      "--env=QT_PLUGIN_PATH=/app/bin/prerequisites/Qt-5611/plugins",
+      "--env=QTVERSION=5",
+      "--env=LRELEASE=/app/bin/prerequisites/Qt-5611/bin/lrelease",
+      "--env=QT_QPA_PLATFORM_PLUGIN_PATH=/app/bin/prerequisites/Qt-5611/plugins/platforms",
+
+      "--env=PYQT_ROOT_DIR=/app/bin/prerequisites/Pyqt-560",
+      "--env=PYQT_SIPS=/app/bin/prerequisites/Pyqt-560/share/sip",
+      "--env=PYUIC=/app/bin/prerequisites/Pyqt-560/bin/pyuic5",
+
+      "--env=MATPLOTLIB_HOME=/app/bin/prerequisites/Matplotlib-143",
+
+      "--env=PVHOME=/app/bin/prerequisites/Paraview-v512_EDF",
+      "--env=PVVERSION=5.1",
+      "--env=PV_PLUGIN_PATH=/app/bin/tools/Paravisaddons-V8_3_0/lib:/app/bin/modules/PARAVIS_V8_3_0/lib/paraview:/app/bin/prerequisites/Paraview-v512_EDF/lib/paraview-5.1",
+
+      "--env=QWTHOME=/app/bin/prerequisites/Qwt-612",
+      "--env=QWT_INCLUDES=/app/bin/prerequisites/Qwt-612/include",
+
+      "--env=MEDCOUPLING_ROOT_DIR=/app/bin/tools/Medcoupling-V8_3_0",
+
+      "--env=ASTERSTUDY_ROOT_DIR=/app/bin/modules/ASTERSTUDY_201702",
+
+      "--env=SMESH_DIR=/app/bin/modules/SMESH_V8_3_0",
+
+      "--env=PARAVIS_DIR=/app/bin/modules/PARAVIS_V8_3_0",
+
+      "--env=CYTHON_ROOT_DIR=/app/bin/prerequisites/Cython-0232",
+
+      "--env=GMSHHOME=/app/bin/prerequisites/Gmsh-2110",
+
+      "--env=LIBXSLT_ROOT_DIR=/app/bin/prerequisites/Libxslt-1128",
+
+      "--env=MESHGEMSHOME=/app/bin/prerequisites/Meshgems-245",
+      "--env=MESHGEMS_ROOT_DIR=/app/bin/prerequisites/Meshgems-245",
+
+      "--env=ZCRACKSHOME=/app/bin/prerequisites/Zcracks-287",
+
+      "--env=NETGENHOME=/app/bin/tools/Netgen-531",
+
+      "--env=ASTER_ROOT_DIR=/app/bin/modules/ASTER_20170",
+
+      "--env=HOMARD_REP_EXE=/app/bin/tools/Homard_tool-118",
+      "--env=HOMARD_EXE=homard",
+
+      "--env=PARAVISADDONS_ROOT_DIR=/app/bin/tools/Paravisaddons-V8_3_0",
+
+      "--env=ASTER_STABLE=/app/bin/tools/Code_aster_stable-v134_smeca",
+
+      "--env=LXML_ROOT_DIR=/app/bin/prerequisites/Lxml-340",
+
+      "--env=EFICAS_NOUVEAU_ROOT=/app/bin/tools/Eficas_nouveau-V8_3_0",
+      "--env=EFICAS_ROOT=/app/bin/tools/Eficas_nouveau-V8_3_0",
+
+
+      /* MODULES */
+      "--env=KERNEL_ROOT_DIR=/app/bin/modules/KERNEL_V8_3_0",
+      "--env=GUI_ROOT_DIR=/app/bin/modules/GUI_V8_3_asterstudy",
+      "--env=ASTERSTUDY_ROOT_DIR=/app/bin/modules/ASTERSTUDY_201702",
+      "--env=GEOM_ROOT_DIR=/app/bin/modules/GEOM_V8_3_0",
+      "--env=MED_ROOT_DIR=/app/bin/modules/MED_V8_3_0",
+      "--env=SMESH_ROOT_DIR=/app/bin/modules/SMESH_V8_3_0",
+      "--env=PARAVIS_ROOT_DIR=/app/bin/modules/PARAVIS_V8_3_0",
+      "--env=HEXABLOCK_ROOT_DIR=/app/bin/modules/HEXABLOCK_V8_3_0",
+      "--env=HEXABLOCKPLUGIN_ROOT_DIR=/app/bin/modules/HEXABLOCKPLUGIN_V8_3_0",
+      "--env=DSCCODE_ROOT_DIR=/app/bin/modules/DSCCODE_V8_3_0",
+      "--env=EFICAS_ROOT_DIR=/app/bin/modules/EFICAS_V8_3_0",
+      "--env=YACS_ROOT_DIR=/app/bin/modules/YACS_V8_3_0",
+      "--env=ADAO_ROOT_DIR=/app/bin/modules/ADAO_V8_3_0_EDF",
+      "--env=HYBRIDPLUGIN_ROOT_DIR=/app/bin/modules/HYBRIDPLUGIN_V8_3_0",
+      "--env=SAMPLES_ROOT_DIR=/app/bin/modules/SAMPLES_V8_3_0",
+      "--env=ASTER_ROOT_DIR=/app/bin/modules/ASTER_20170",
+      "--env=GENERICSOLVER_ROOT_DIR=/app/bin/modules/GENERICSOLVER_V8_3_0",
+      "--env=BLSURFPLUGIN_ROOT_DIR=/app/bin/modules/BLSURFPLUGIN_V8_3_0",
+      "--env=HOMARD_ROOT_DIR=/app/bin/modules/HOMARD_V8_3_0",
+      "--env=EUROPLEXUS_ROOT_DIR=/app/bin/modules/EUROPLEXUS_20170",
+      "--env=HexoticPLUGIN_ROOT_DIR=/app/bin/modules/HEXOTICPLUGIN_V8_3_0",
+      "--env=JOBMANAGER_ROOT_DIR=/app/bin/modules/JOBMANAGER_V8_3_0",
+      "--env=NETGENPLUGIN_ROOT_DIR=/app/bin/modules/NETGENPLUGIN_V8_3_0",
+      "--env=GHS3DPLUGIN_ROOT_DIR=/app/bin/modules/GHS3DPLUGIN_V8_3_0",
+      "--env=SalomeAppConfig=/app/bin:/home/A21173/smeca/yamm/examples/salome_meca/icone-smeca.png",
+      "--env=PATH=/app/bin/prerequisites/Meshgems-245/bin/Linux_64:/app/bin/prerequisites/Libxslt-1128/bin:/app/bin/prerequisites/Gmsh-2110/bin:/app/bin/prerequisites/Cython-0232/bin:/app/bin/tools/Medcoupling-V8_3_0/bin:/app/bin/prerequisites/Paraview-v512_EDF/bin:/app/bin/prerequisites/Pyqt-560/bin:/app/bin/prerequisites/Occ-710p1:/app/bin/prerequisites/Qt-5611/bin:/app/bin/prerequisites/Libxml2-290/bin:/app/bin/prerequisites/Cppunit-1132/bin:/app/bin/prerequisites/Graphviz-2380/bin:/app/bin/prerequisites/Docutils-012/bin:/app/bin/prerequisites/Scotch-5111/bin:/app/bin/prerequisites/Numpy-192/bin:/app/bin/tools/Miss3d-66_aster4:/app/bin/prerequisites/Mfront_stable-TFEL202/bin:/app/bin/prerequisites/Mfront-TFEL300/bin:/app/bin/prerequisites/Mercurial-261/bin:/app/bin/tools/Medfichier-321/bin:/app/bin/tools/Homard_aster-117_aster:/app/bin/prerequisites/Gmsh_bin-2120Linux64/bin:/app/bin/tools/Gibi-20008:/app/bin/tools/Code_aster_frontend-20170/bin:/app/bin/prerequisites/Metis_aster-510_aster1/bin:/app/bin/prerequisites/Pygments-202/bin:/app/bin/prerequisites/Cgnslib-3134/bin:/app/bin/prerequisites/Hdf5-1814/bin:/app/bin/prerequisites/Omniorb-416/bin:/app/bin/prerequisites/Sip-418/bin:/app/bin/prerequisites/Python-2710/bin/:/app/bin/prerequisites/Tk-8513/bin:/app/bin/prerequisites/Tcl-8513/bin:/app/bin:/usr/bin",
+      "--env=LD_LIBRARY_PATH=/lib:/app/bin/prerequisites/debianForSalome/lib:/lib64:/app/bin/modules/GHS3DPLUGIN_V8_3_0/lib/salome:/app/bin/modules/NETGENPLUGIN_V8_3_0/lib/salome:/app/bin/modules/JOBMANAGER_V8_3_0/lib/salome:/app/bin/modules/HEXOTICPLUGIN_V8_3_0/lib/salome:/app/bin/modules/HOMARD_V8_3_0/lib/salome:/app/bin/modules/BLSURFPLUGIN_V8_3_0/lib/salome:/app/bin/modules/GENERICSOLVER_V8_3_0/lib/salome:/app/bin/modules/HYBRIDPLUGIN_V8_3_0/lib/salome:/app/bin/modules/YACS_V8_3_0/lib/salome:/app/bin/modules/HEXABLOCKPLUGIN_V8_3_0/lib/salome:/app/bin/modules/HEXABLOCK_V8_3_0/lib/salome:/app/bin/modules/PARAVIS_V8_3_0/lib/salome:/app/bin/modules/SMESH_V8_3_0/lib/salome:/app/bin/modules/MED_V8_3_0/lib/salome:/app/bin/modules/GEOM_V8_3_0/lib/salome:/app/bin/modules/ASTERSTUDY_201702/lib/salome:/app/bin/modules/GUI_V8_3_asterstudy/lib/salome:/app/bin/modules/KERNEL_V8_3_0/lib/salome:/app/bin/prerequisites/Mumps-511_aster2/SEQ/lib:/app/bin/tools/Paravisaddons-V8_3_0/lib:/app/bin/tools/Netgen-531/lib:/app/bin/prerequisites/Meshgems-245/lib/Linux_64:/app/bin/prerequisites/Libxslt-1128/lib:/app/bin/prerequisites/Gmsh-2110/lib:/app/bin/prerequisites/Opencv-231/lib:/app/bin/tools/Medcoupling-V8_3_0/lib:/app/bin/prerequisites/Qwt-612/lib:/app/bin/prerequisites/Paraview-v512_EDF/lib/paraview-5.1:/app/bin/prerequisites/Qt-5611/lib:/app/bin/prerequisites/Occ-710p1/lib:/app/bin/prerequisites/Tbb-424/lib:/app/bin/prerequisites/Freeimage-3160p1/lib:/app/bin/prerequisites/Libxml2-290/lib/python2.7/site-packages:/app/bin/prerequisites/Libxml2-290/lib:/app/bin/tools/Libbatch-V2_3_1/lib:/app/bin/prerequisites/Cppunit-1132/lib:/app/bin/prerequisites/Gl2ps-139svn20160620/lib:/app/bin/prerequisites/Graphviz-2380/lib/graphviz:/app/bin/prerequisites/Graphviz-2380/lib:/app/bin/prerequisites/Boost-1520/lib:/app/bin/prerequisites/Mumps4-4100_aster3/SEQ/lib:/app/bin/prerequisites/Mfront_stable-TFEL202/lib:/app/bin/prerequisites/Mfront-TFEL300/lib:/app/bin/prerequisites/Metis_aster-510_aster1/Lib:/app/bin/tools/Medfichier-321/lib:/app/bin/prerequisites/Lapack-350/lib:/app/bin/tools/Code_aster_frontend-20170/lib:/app/bin/prerequisites/Metis_aster-510_aster1/lib:/app/bin/prerequisites/Tcl-8513/lib/Togl1.7:/app/bin/prerequisites/Cgnslib-3134/lib:/app/bin/prerequisites/Hdf5-1814/lib:/app/bin/prerequisites/Omniorb-416/lib:/app/bin/prerequisites/Tcl-8513/lib/Tix8.4.3:/app/bin/prerequisites/Sip-418/lib/python2.7/site-packages:/app/bin/prerequisites/Python-2710/lib:/app/bin/prerequisites/Tk-8513/lib:/app/bin/prerequisites/Tcl-8513/lib:/app/lib:/usr/lib/ffmpeg/lib:/usr/lib"
+   ],
+   "modules": [
+      /* openssl - required by Python27's hashlib library */
+      {
+         "name": "openssl",
+         "no-autogen" : true,
+         /* "buildsystem": "autotools", */
+         "strip" : false,
+         "no-debuginfo" : false,
+         "buildsystem": "simple",
+
+         "build-commands": [
+
+            "./config --prefix=/app shared",
+            "make depend",
+            "make",
+            "make install_sw",
+            /* Solving issues while stripping */
+            "chmod 755 /app/lib/libcrypto.so.1.0.0",
+            "chmod 755 /app/lib/libssl.so.1.0.0",
+            "chmod 755 /app/lib/engines/*"
+         ],
+
+         "sources": [
+            {
+                "type": "archive",
+                "url": "https://www.openssl.org/source/old/1.0.0/openssl-1.0.0t.tar.gz",
+                "sha256": "5ab6e348c6c2a95d457e7a00e0aa653bfc7eb4df7b24e7c9ab63163ac0299097"
+            }
+         ]
+      },
+
+      {
+         "name": "bsdtar",
+         "no-autogen": true,
+         "buildsystem": "cmake",
+
+         "sources": [
+            {
+               "type": "git",
+               "url": "https://github.com/libarchive/libarchive.git",
+               "commit" : "6293581"
+            }
+         ]
+      },
+
+      {
+         "name": "salome_meca",
+         "no-autogen": true,
+         "strip" : true,
+         "no-debuginfo" : true,
+         "buildsystem": "simple",
+         "build-options" : {
+            "env" : {
+               "PATH" : "/app/bin/prerequisites/Python-2710/bin/:/app/bin/prerequisites/Tk-8513/bin:/app/bin/prerequisites/Tcl-8513/bin:/app/bin:/usr/bin",
+               "LD_LIBRARY_PATH" : "/app/bin/prerequisites/Tk-8513/lib:/app/bin/prerequisites/Tcl-8513/lib:/app/lib:/usr/lib/ffmpeg/lib:/usr/lib",
+               "PREREQUISITES_ROOT_DIR" : "/app/bin/prerequisites",
+               "TOOLS_ROOT_DIR" : "/app/bin/tools",
+               "KERNEL_ROOT_DIR" : "/app/bin/modules/KERNEL_V8_3_0",
+               "GUI_ROOT_DIR" : "/app/bin/modules/GUI_V8_3_asterstudy",
+               "ASTERSTUDY_ROOT_DIR" : "/app/bin/modules/ASTERSTUDY_201702",
+               "GEOM_ROOT_DIR" : "/app/bin/modules/GEOM_V8_3_0",
+               "MED_ROOT_DIR" : "/app/bin/modules/MED_V8_3_0",
+               "SMESH_ROOT_DIR" : "/app/bin/modules/SMESH_V8_3_0",
+               "PARAVIS_ROOT_DIR" : "/app/bin/modules/PARAVIS_V8_3_0",
+               "HEXABLOCK_ROOT_DIR" : "/app/bin/modules/HEXABLOCK_V8_3_0",
+               "HEXABLOCKPLUGIN_ROOT_DIR" : "/app/bin/modules/HEXABLOCKPLUGIN_V8_3_0",
+               "DSCCODE_ROOT_DIR" : "/app/bin/modules/DSCCODE_V8_3_0",
+               "EFICAS_ROOT_DIR" : "/app/bin/modules/EFICAS_V8_3_0",
+               "YACS_ROOT_DIR" : "/app/bin/modules/YACS_V8_3_0",
+               "ADAO_ROOT_DIR" : "/app/bin/modules/ADAO_V8_3_0_EDF",
+               "HYBRIDPLUGIN_ROOT_DIR" : "/app/bin/modules/HYBRIDPLUGIN_V8_3_0",
+               "SAMPLES_ROOT_DIR" : "/app/bin/modules/SAMPLES_V8_3_0",
+               "ASTER_ROOT_DIR" : "/app/bin/modules/ASTER_20170",
+               "GENERICSOLVER_ROOT_DIR" : "/app/bin/modules/GENERICSOLVER_V8_3_0",
+               "BLSURFPLUGIN_ROOT_DIR" : "/app/bin/modules/BLSURFPLUGIN_V8_3_0",
+               "HOMARD_ROOT_DIR" : "/app/bin/modules/HOMARD_V8_3_0",
+               "EUROPLEXUS_ROOT_DIR" : "/app/bin/modules/EUROPLEXUS_20170",
+               "HexoticPLUGIN_ROOT_DIR" : "/app/bin/modules/HEXOTICPLUGIN_V8_3_0",
+               "JOBMANAGER_ROOT_DIR" : "/app/bin/modules/JOBMANAGER_V8_3_0",
+               "NETGENPLUGIN_ROOT_DIR" : "/app/bin/modules/NETGENPLUGIN_V8_3_0",
+               "GHS3DPLUGIN_ROOT_DIR" : "/app/bin/modules/GHS3DPLUGIN_V8_3_0"
+            }
+         },
+         "build-commands": [
+            /* Uncompressing */
+            "mkdir -p /app/bin",
+            "bsdtar xvf Salome-Meca-2017.0.2-LGPL-2.tgz",
+            "rm -f Salome-Meca-2017.0.2-LGPL-2.tgz",
+            "tail -n+748 Salome-Meca-2017.0.2-LGPL-2.run | bsdtar xzvf - -C/app/bin --strip-components=1",
+            "rm Salome-Meca-2017.0.2-LGPL-2.run",
+
+            /* Changing permission */
+            "chmod 755 /app/bin/prerequisites/Python-2710/lib/libpython2.7.so.1.0",
+            "chmod 755 /app/bin/prerequisites/Tcl-8513/lib/libtcl8.5.so",
+            "chmod 755 /app/bin/prerequisites/Tk-8513/lib/libtk8.5.so",
+
+            /* This helps avoiding the 10.5Mb commit limit*/
+            "rm -f -r /app/bin/tools/Code_aster_oldstable-1280",
+
+            /* The following is problematic; using the one included in the system */
+            "rm -f -r /app/bin/prerequisites/Freetype-2411",
+
+            /* Rather than executing 'create_app.sh' we do the following */
+            "sed 's#\${ROOT_SALOME}#/app/bin#g' /app/bin/.config_appli_template.xml > /app/bin/config_appli.xml",
+            "cd /app/bin",
+            "mv /app/bin/sha1_collections.txt /app/bin/sha1_collections.txt.bak",
+            "sed -i 's#sha1_collections.txt#sha1_collections.txt.bak#g' /app/bin/config_appli.xml",
+
+            /* Virtual application creation */
+            "python /app/bin/modules/KERNEL_V8_3_0/bin/salome/appli_gen.py --config=/app/bin/config_appli.xml --prefix=/app/virtual",
+
+            /* Because of the space issues */
+            "find /app/bin/ -name '*.h' -delete",
+            "rm -f -r /app/bin/prerequisites/Mfront_stable-TFEL202",
+
+            "python /app/bin/salome_post_install.py",
+
+            /* Create desktop file */
+            "sed -e 's,APPLIDIR/salome,/app/virtual/salome,' -e 's,SALOMEDIR/icon.png,org.freedesktop.SalomeMeca,' /app/bin/.salome_meca_V2017.0.2.desktop > /app/bin/org.freedesktop.SalomeMeca.desktop",
+            "install -Dm644 /app/bin/org.freedesktop.SalomeMeca.desktop /app/share/applications/org.freedesktop.SalomeMeca.desktop",
+            "install -Dm644 org.freedesktop.SalomeMeca.256.png /app/share/icons/hicolor/256x256/apps/org.freedesktop.SalomeMeca.png",
+            "install -Dm644 org.freedesktop.SalomeMeca.128.png /app/share/icons/hicolor/128x128/apps/org.freedesktop.SalomeMeca.png",
+            "install -Dm644 org.freedesktop.SalomeMeca.64.png /app/share/icons/hicolor/64x64/apps/org.freedesktop.SalomeMeca.png"
+
+         ],
+         "sources": [
+            {
+               "type": "file",
+               "url": "https://www.code-aster.org/FICHIERS/Salome-Meca-2017.0.2-LGPL-2.tgz",
+               "sha256": "ed4a147b39269a08ae76bd4e2029fcf7330736715a2834003f5ddfccbe2b802f"
+            },
+            {
+               "type": "file",
+               "path": "org.freedesktop.SalomeMeca.256.png",
+               "sha256": "2f4b765238f1aa2c8f73c5d1cfdb05271dc8ec611d64018d63d59225a655b285"
+            },
+            {
+               "type": "file",
+               "path": "org.freedesktop.SalomeMeca.128.png",
+               "sha256": "e7706aeb37da25b0722385a7822d428e3602a68e74f58f2204ec825ab609c1f8"
+            },
+            {
+               "type": "file",
+               "path": "org.freedesktop.SalomeMeca.64.png",
+               "sha256": "caaa909eb8fe14b8b2954dee2cc8043332cda1da7d379ee191b478a4ccd4883c"
+            }
+
+         ]
+      }
+   ]
+}
